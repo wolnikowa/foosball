@@ -1,0 +1,28 @@
+@import "../base.scss";
+//test
+.nav{
+    position:fixed;
+    min-height:100%;
+    width:120px;
+    background-color: $black;
+    padding:10px;
+    >.tabs{
+        margin-top:15px;
+        margin-left:10px;
+        >ul{
+            >li{
+                list-style-type: none;
+                margin-bottom: 15px;
+                >a{
+                    color:$white;
+                    font-size: 1.1rem;
+                    font-weight: lighter;
+                    text-decoration: none;
+                }
+                >a:focus,a:hover{
+                    color:$jitYellow;
+                }
+            }
+        }
+    }
+}

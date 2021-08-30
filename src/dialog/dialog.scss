@@ -1,0 +1,43 @@
+@import "./../components/base.scss";
+
+.MuiDialogTitle-root{
+  background-color: $jitYellow;
+}
+.tournamentNameSpan{
+  font-weight: bolder;
+}
+form{
+  display:flex;
+  flex-flow: column nowrap;
+  :first-child{
+    margin-bottom: 10px;
+  }
+}
+.headerDialogWrapper{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+.close{
+  position:relative;
+  right:-12px;
+  top:5px;
+}
+.buttonsSignUp{
+  background-color:$jitYellow;
+  outline: 0 !important;
+  padding:8px 14px;
+  width:40%;
+  font-size:14px;
+  border-radius: 7px;
+  font-weight:300;
+  border:0px;
+}
+.buttonsActions{
+  margin-top: 15px;
+  margin-bottom: 10px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width:100%;
+}
