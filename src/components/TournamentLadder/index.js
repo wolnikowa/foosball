@@ -56,16 +56,25 @@ const rounds = [
     },
 ];
 
-const CustomSeed = ({ seed, breakpoint, roundIndex, seedIndex }) => {
-    // breakpoint passed to Bracket component
-    // to check if mobile view is triggered or not
+
+const CustomSeed = ({ seed }) => {
+
     var _a, _b;
-    // mobileBreakpoint is required to be passed down to a seed
-    return (React.createElement(Seed, { mobileBreakpoint: breakpoint, style: { fontSize: 14 } },
-        React.createElement(SeedItem, null,
-            React.createElement("div", null,
-                React.createElement(SeedTeam, { style: { color: '#ffffff', backgroundColor: '#1d1d1d', border: '0.5px solid #4A4A4A', borderRadius: '0' } }, ((_a = seed.teams[0]) === null || _a === void 0 ? void 0 : _a.name) || 'NO TEAM '),
-                React.createElement(SeedTeam, { style: { color: '#ffffff', backgroundColor: '#1d1d1d', border: '0.5px solid #4A4A4A', borderRadius: '0' } }, ((_b = seed.teams[1]) === null || _b === void 0 ? void 0 : _b.name) || 'NO TEAM ')))));
+
+    return (
+        <Seed fontSize='14' >
+
+            <SeedItem props='null'>
+                <div props='null'>
+                    <SeedTeam color='#ffffff' backgroundColor='#1d1d1d' border='0.5px solid #4A4A4A' borderRadius='0'>
+                        {((_a = seed.teams[0]) === null || _a === void 0 ? void 0 : _a.name) || 'NO TEAM '} </SeedTeam >
+
+                    <SeedTeam color='#ffffff' backgroundColor='#1d1d1d' border='0.5px solid #4A4A4A' borderRadius='0'>
+                        {((_b = seed.teams[1]) === null || _b === void 0 ? void 0 : _b.name) || 'NO TEAM '} </SeedTeam >
+                </div>
+            </SeedItem>
+        </Seed>
+    );
 };
 
 const TournamentLadder = () => {
