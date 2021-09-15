@@ -5,6 +5,7 @@ import DefaultPage from "./components/Main";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { IntlProvider } from "react-intl";
 import "./globalStyles.scss";
+import GroupsTable from "./components/ActiveTournamentGroups";
 
 const App = () => (
 	<IntlProvider locale="pl" defaultLocale="pl">
@@ -16,6 +17,8 @@ const App = () => (
 					<Switch>
 						<Route exact path="/">
 							<DefaultPage />
+							{/* temporarily */}
+							<GroupsTable />
 						</Route>
 					</Switch>
 				</div>
