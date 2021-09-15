@@ -1,0 +1,35 @@
+@import "../base.scss";
+
+.box{
+    flex:30%;
+    margin: 0 10px 20px 10px;
+    .boxHeader{
+        background-color: black;
+        color:white;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 15px;
+        padding:5px 10px;
+    }
+    .boxBody{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        background-color: white;
+        height:130px;
+        margin: auto;
+        align-items: center;
+        >p{
+            flex:30%;
+            font-size:20px;
+            color:rgb(121, 110, 110);
+            text-align: center;
+        }
+        >.score{
+            font-size:30px;
+            color:black;
+        }
+    }
+}

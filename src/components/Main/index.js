@@ -1,6 +1,10 @@
 import React from "react";
 import SignUpBox from "../SignUpForTournamentBox";
+<<<<<<< Updated upstream
 
+=======
+import "./styles.scss";
+>>>>>>> Stashed changes
 const MOCK_DATA = [
 	{
 		tournamentName: "JIT Euro",
@@ -24,7 +28,11 @@ const MOCK_DATA = [
 
 const DefaultPage = () => {
 	return (
+<<<<<<< Updated upstream
 		<>
+=======
+		<div className="height">
+>>>>>>> Stashed changes
 			{MOCK_DATA.map((tournament) => (
 				<SignUpBox
 					tournamentName={tournament.tournamentName}
@@ -33,7 +41,11 @@ const DefaultPage = () => {
 					DeadlineDate={tournament.DeadlineDate.toDateString()}
 				/>
 			))}
+<<<<<<< Updated upstream
 		</>
+=======
+		</div>
+>>>>>>> Stashed changes
 	);
 };
 export default DefaultPage;
