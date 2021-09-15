@@ -9,6 +9,7 @@ import ActiveTournaments from "./components/ActiveTournaments";
 import InnerNav from "./components/InnerNav";
 import TournamentLadder from "./components/TournamentLadder";
 import Tournament from "./components/Tournament";
+import GroupResults from "./components/GroupResults";
 
 const App = () => (
 	<IntlProvider locale="pl" defaultLocale="pl">
@@ -29,6 +30,7 @@ const App = () => (
 						</Route>
 						<Route exact path="/Active-tournament/tournament-group-results">
 							<Tournament />
+							<GroupResults />
 						</Route>
 						<Route exact path="/Active-tournament/tournament-table">
 							<Tournament />

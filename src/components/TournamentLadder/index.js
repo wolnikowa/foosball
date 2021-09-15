@@ -59,7 +59,10 @@ const rounds = [
 
 const CustomSeed = ({ seed }) => {
 
-    var _a, _b;
+    const [firstTeam, secondTeam] = seed.teams;
+    const { name: firstName = '' } = firstTeam || {};
+    const { name: secondName = '' } = secondTeam || {};
+
 
     return (
         <Seed fontSize='14' >
@@ -67,10 +70,10 @@ const CustomSeed = ({ seed }) => {
             <SeedItem props='null'>
                 <div props='null'>
                     <SeedTeam color='#ffffff' backgroundColor='#1d1d1d' border='0.5px solid #4A4A4A' borderRadius='0'>
-                        {((_a = seed.teams[0]) === null || _a === void 0 ? void 0 : _a.name) || 'NO TEAM '} </SeedTeam >
+                        {firstName || 'NO TEAM '} </SeedTeam >
 
                     <SeedTeam color='#ffffff' backgroundColor='#1d1d1d' border='0.5px solid #4A4A4A' borderRadius='0'>
-                        {((_b = seed.teams[1]) === null || _b === void 0 ? void 0 : _b.name) || 'NO TEAM '} </SeedTeam >
+                        {secondName || 'NO TEAM'} </SeedTeam >
                 </div>
             </SeedItem>
         </Seed>

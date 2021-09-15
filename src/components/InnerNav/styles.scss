@@ -28,11 +28,12 @@
                 a {
                     text-decoration: none;
                     color: $jitYellow;
-                }
-                    a:focus,a:hover {
+                
+                    &:focus,&:hover {
                         text-decoration: underline;
                         text-decoration-thickness: 4px;
                     }
+                }
                 
                 
             }
