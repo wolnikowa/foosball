@@ -4,14 +4,13 @@ import Nav from "./components/Nav";
 import DefaultPage from "./components/Main";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { IntlProvider } from "react-intl";
-<<<<<<< Updated upstream
-=======
+
 import Boxscore from "./components/BoxScore";
 import ActiveTournamentBody from "./components/ActiveTournamentsBody";
 
 
->>>>>>> Stashed changes
 import "./globalStyles.scss";
+import GroupsTable from "./components/ActiveTournamentGroups";
 
 const App = () => (
 	<IntlProvider locale="pl" defaultLocale="pl">
@@ -23,23 +22,26 @@ const App = () => (
 					<Switch>
 						<Route exact path="/">
 							<DefaultPage />
-<<<<<<< Updated upstream
-=======
+
+
 							<Boxscore/>
->>>>>>> Stashed changes
+
+							
+							<GroupsTable />
+
 						</Route>
 					</Switch>
 				</div>
 			</div>
-<<<<<<< Updated upstream
-=======
+
+
 			<Switch>
 						<Route exact path="/active">
 							
 							<ActiveTournamentBody/>
 						</Route>
 					</Switch>
->>>>>>> Stashed changes
+
 		</Router>
 	</IntlProvider>
 );
