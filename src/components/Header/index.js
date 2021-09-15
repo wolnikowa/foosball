@@ -3,6 +3,8 @@ import "./styles.scss";
 import jitLogo from "./../../assets/jit_logo.svg";
 import defaultUser from "./../../assets/default_user.jpg";
 
+
+
 class Header extends React.Component {
 	render() {
 		return (
