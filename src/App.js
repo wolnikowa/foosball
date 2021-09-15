@@ -11,6 +11,8 @@ import ActiveTournamentBody from "./components/ActiveTournamentsBody";
 
 import "./globalStyles.scss";
 import GroupsTable from "./components/ActiveTournamentGroups";
+import TournamentEdition from "./components/TournamentEdition";
+import TeamList from "./components/Teams";
 
 const App = () => (
 	<IntlProvider locale="pl" defaultLocale="pl">
@@ -28,7 +30,7 @@ const App = () => (
 
 							
 							<GroupsTable />
-
+						
 						</Route>
 					</Switch>
 				</div>
@@ -39,6 +41,9 @@ const App = () => (
 						<Route exact path="/active">
 							
 							<ActiveTournamentBody/>
+							<TournamentEdition />
+							<TeamList />
+  
 						</Route>
 					</Switch>
 

@@ -1,14 +1,19 @@
 import React from "react";
 import "./styles.scss";
 import EditIcon from '@material-ui/icons/Edit';
-const ActiveTournament = ({ date, name}) => {
+const Team = ({team_name, name1, name2}) => {
 	return (
 		<div className="box">
 			<div className="boxHeader">
 		
-				<p>{name}</p>
-				<span>{date.toISOString().slice(0, 10)}</span>
-	<EditIcon/>
+				<p>{team_name}</p>
+                <span>{name1}</span>
+                <span>{name2}</span>
+
+                
+				<EditIcon/>
+			
+
 			
 
 			</div>
@@ -18,4 +23,4 @@ const ActiveTournament = ({ date, name}) => {
 	);
 };
 
-export default ActiveTournament;
+export default Team;
