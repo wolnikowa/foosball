@@ -7,7 +7,6 @@ import remis from '../../assets/remis.png';
 
 const GroupResults = () => (
     <div>
-
         <table>
             <thead>
                 <tr className="tableHead">
