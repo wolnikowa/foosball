@@ -10,6 +10,11 @@ import ActiveTournamentBody from "./components/ActiveTournamentsBody";
 
 
 import "./globalStyles.scss";
+import ActiveTournaments from "./components/ActiveTournaments";
+import InnerNav from "./components/InnerNav";
+import TournamentLadder from "./components/TournamentLadder";
+import Tournament from "./components/Tournament";
+import GroupResults from "./components/GroupResults";
 import GroupsTable from "./components/ActiveTournamentGroups";
 
 const App = () => (
@@ -24,23 +29,38 @@ const App = () => (
 							<DefaultPage />
 
 
-							<Boxscore/>
+							<Boxscore />
 
-							
+
 							<GroupsTable />
 
 						</Route>
+						<Route exact path="/Active-tournament">
+							<ActiveTournaments />
+						</Route>
+						<Route exact path="/Active-tournament/tournament-groups">
+							<Tournament />
+						</Route>
+						<Route exact path="/Active-tournament/tournament-group-results">
+							<Tournament />
+							<GroupResults />
+						</Route>
+						<Route exact path="/Active-tournament/tournament-table">
+							<Tournament />
+							<TournamentLadder />
+						</Route>
+
 					</Switch>
 				</div>
 			</div>
 
 
 			<Switch>
-						<Route exact path="/active">
-							
-							<ActiveTournamentBody/>
-						</Route>
-					</Switch>
+				<Route exact path="/active">
+
+					<ActiveTournamentBody />
+				</Route>
+			</Switch>
 
 		</Router>
 	</IntlProvider>
