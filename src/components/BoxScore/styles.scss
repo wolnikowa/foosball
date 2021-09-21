@@ -1,0 +1,30 @@
+@import "../base.scss";
+
+.boxscoreBody{
+    background-color: rgb(202, 202, 202);
+    width:75%;
+    margin-left: 240px;
+    margin-bottom: 40px;
+    margin-top:40px;
+	padding: 10px 10px;
+    >.boxscoreHeader{
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding:20px;
+            >span{
+                font-size: 30px;
+            }
+        >p{
+            color:rgb(110, 106, 106);
+            font-size:15px;
+            padding-left:30px;
+            line-height: 30px;
+        }
+
+    }
+}        .flexBoxes{
+            display:flex;
+            flex-flow: row wrap;
+            flex:1fr 1fr 1fr;
+        }

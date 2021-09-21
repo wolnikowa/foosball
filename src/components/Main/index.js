@@ -1,6 +1,8 @@
 import React from "react";
 import SignUpBox from "../SignUpForTournamentBox";
 
+import "./styles.scss";
+
 const MOCK_DATA = [
 	{
 		tournamentName: "JIT Euro",
@@ -24,7 +26,9 @@ const MOCK_DATA = [
 
 const DefaultPage = () => {
 	return (
-		<>
+
+		<div className="height">
+
 			{MOCK_DATA.map((tournament) => (
 				<SignUpBox
 					tournamentName={tournament.tournamentName}
@@ -33,7 +37,11 @@ const DefaultPage = () => {
 					DeadlineDate={tournament.DeadlineDate.toDateString()}
 				/>
 			))}
-		</>
+
+		
+
+		</div>
+
 	);
 };
 export default DefaultPage;

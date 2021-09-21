@@ -11,3 +11,27 @@
     text-align: center;
     align-items: center;
 }
+
+
+.boxHeader{
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding:20px;
+        color:$jitYellow;
+
+        >span{
+                font-size: 30px;
+                margin:auto;
+                
+            
+            }
+        >p{
+            color:$jitYellow;
+            font-size:30px;
+            margin: 0 0 0 0;
+           
+        }
+        
+
+    }
