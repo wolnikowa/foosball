@@ -1,15 +1,24 @@
 import React from "react";
 import "./styles.scss";
+import EditIcon from '@material-ui/icons/Edit';
+const BoxscoreMatch = ({ date, name }) => {
+	return (
+		<div className="box">
+			<div className="boxHeader">
 
-const ActiveTournaments = () => (
+				<p>{name}</p>
+				<span>{date.toISOString().slice(0, 10)}</span>
+				<EditIcon />
 
-	<div className="pageStyle">
-		Tu zwracamy listę aktywnych turniejów
-		<h1><a href='/Active-tournament/tournament-groups'>Jit Euro</a></h1>
-		<h1>Igrzyska Śmierci</h1>
-	</div>
-);
 
-export default ActiveTournaments;
+			</div>
+
+
+		</div>
+	);
+};
+
+export default BoxscoreMatch;
+
 
 

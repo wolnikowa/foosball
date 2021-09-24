@@ -4,16 +4,15 @@ import Nav from "./components/Nav";
 import DefaultPage from "./components/Main";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { IntlProvider } from "react-intl";
+
 import Boxscore from "./components/BoxScore";
 import ActiveTournamentBody from "./components/ActiveTournamentsBody";
+
+
 import "./globalStyles.scss";
-import ActiveTournaments from "./components/ActiveTournaments";
-import InnerNav from "./components/InnerNav";
-import TournamentLadder from "./components/TournamentLadder";
-import Tournament from "./components/Tournament";
-import GroupResults from "./components/GroupResults";
 import GroupsTable from "./components/ActiveTournamentGroups";
-import BoxscoreMatch from "./components/BoxscoreMatch";
+import TournamentEdition from "./components/TournamentEdition";
+import TeamList from "./components/Teams";
 
 const App = () => (
 	<IntlProvider locale="pl" defaultLocale="pl">
@@ -25,31 +24,29 @@ const App = () => (
 					<Switch>
 						<Route exact path="/">
 							<DefaultPage />
-							<Boxscore />
-						</Route>
-						<Route exact path="/Active-tournament">
-							<ActiveTournaments />
-						</Route>
-						<Route exact path="/Active-tournament/tournament-groups">
-							<Tournament />
+
+
+							<Boxscore/>
+
+							
 							<GroupsTable />
-						</Route>
-						<Route exact path="/Active-tournament/tournament-group-results">
-							<Tournament />
-							<GroupResults />
-						</Route>
-						<Route exact path="/Active-tournament/tournament-table">
-							<Tournament />
-							<TournamentLadder />
+						
 						</Route>
 					</Switch>
 				</div>
 			</div>
+
+
 			<Switch>
-				<Route exact path="/active">
-					<ActiveTournamentBody />
-				</Route>
-			</Switch>
+						<Route exact path="/Active-tournament">
+							
+							<ActiveTournamentBody />
+							<TournamentEdition />
+							<TeamList />
+  
+						</Route>
+					</Switch>
+
 		</Router>
 	</IntlProvider>
 );
