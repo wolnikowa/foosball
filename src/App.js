@@ -38,7 +38,7 @@ const App = () => (
 
 
 			<Switch>
-						<Route exact path="/active">
+						<Route exact path="/Active-tournament">
 							
 							<ActiveTournamentBody/>
 							<TournamentEdition />

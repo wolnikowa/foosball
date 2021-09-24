@@ -1,10 +1,9 @@
 import React from "react";
 import Edition from "../TournamentEditionBody";
-import "./styles.scss";
 import EditIcon from '@material-ui/icons/Edit';
 
 
-const TournamentEditionFields = [
+const tournamentEditionFields = [
 	{
 		name: "Limit of teams",
 		value: 3,
@@ -49,19 +48,15 @@ const TournamentEdition = () => {
 				<span>Tournament edition</span>
 				<p>Tournament Configuration</p>
 			</div>
-		
 				<div className="tournament">
-				{TournamentEditionFields.map((match) => (
+					{tournamentEditionFields.map((match) => (
 					<Edition
 						name={match.name}
 						value={match.value}
-						
-						
 					/>
 				
-				))}
+					))}
 				</div>
-		
 		</div>
 	);
 };

@@ -4,16 +4,16 @@ import "./styles.scss";
 
 
 
-const TeamMembers = [
+const teamMembers = [
 	{
-        team_name: "Analitycy",
+        teamName: "Analitycy",
 		name1: "Wiktoria ",
 		name2: "Julia ",
 		
 
 	},
 	{
-        team_name: "Devopsi",
+        teamName: "Devopsi",
 		name1: "Roman ",
 		name2: "Roman2 ",
 		
@@ -28,20 +28,15 @@ const TeamList= () => {
 				<span>Teams</span>
 				<p>Teams management</p>
 			</div>
-		
-				<div className="tournament">
-				{TeamMembers.map((match) => (
-					<Team
-                        team_name={match.team_name}
+					<div className="tournament">
+					{teamMembers.map((match) => (
+						<Team
+                        team_name={match.teamName}
 						name1={match.name1}
 						name2={match.name2}
-						
-						
-					/>
-				
-				))}
-				</div>
-		
+						/>
+					))}
+			</div>
 		</div>
 	);
 };
