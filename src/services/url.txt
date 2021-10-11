@@ -1,0 +1,27 @@
+
+//Matches
+export const allMatches = '/api/matches'
+export const newestMatches = '/api/matches/newest'
+export const matchesForTeam = '/api/matches/team'  // Trzeba podać id w requeście - '/api/matches/team/{id}'
+export const matchesForGroup = '/api/matches/group' // Trzeba podać id w requeście -'/api/matches/group/{id}'
+export const matchesForTournament = '/api/matches/tournament' // Trzeba podać id w requeście -'/api/matches/tournament/{id}'
+
+//Players
+export const allPlayers = '/api/players'
+export const playersForTeam = '/api/players/team'  // Trzeba podać id w requeście - '/api/players/team/{id}'
+
+//Teams
+export const allTeams = '/api/teams'
+export const specificTeam = '/api/teams' // Trzeba podać id w requeście - '/api/teams/{id}'
+export const teamsForTournament = '/api/teams/tournament' // Trzeba podać id w requeście - '/api/teams/tournament/{id}'
+export const teamsOfGroup = '/api/teams/group' // Trzeba podać id w requeście - '/api/teams/group/{id}'
+
+//Tournaments
+export const allActiveTorunaments = '/api/tournaments'  //(póki co tylko aktywne)
+export const specificTournament = '/api/tournaments' // Trzeba podać id w requeście - '/api/tournaments/{id}'
+export const tournamentGroups= '/api/tournaments/groups' //czym się rozn od allTorunamntGroups?
+
+//Tournaments groups
+export const allTournamentGroups = '/api/tournament-groups'
+export const specificTournamentGroup = '/api/tournament-groups' // Trzeba podać id w requeście - '/api/tournament-groups/{id}'
+export const groupsForSpecificTournament = '/api/tournament-groups/tournament' // Trzeba podać id w requeście - '/api/tournament-groups/tournament/{id}'

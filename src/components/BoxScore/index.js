@@ -1,6 +1,8 @@
 import React from "react";
 import BoxscoreMatch from "../BoxscoreMatch";
 import "./styles.scss";
+import axios from "axios";
+import { allTeams } from "../../services/url.txt";
 
 const mock_data_boxscore = [
 	{
@@ -46,6 +48,7 @@ const mock_data_boxscore = [
 		score: "2:3",
 	},
 ];
+console.log(axios.get(allTeams))
 
 const Boxscore = () => {
 	return (
