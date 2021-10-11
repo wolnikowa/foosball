@@ -1,6 +1,10 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
+// const {
+//     addProxy,
+// } = require('./server/setupServer');
+axios.get('/api/cokolwiek')
 
 module.exports = {
     context: __dirname,
@@ -11,7 +15,14 @@ module.exports = {
         publicPath: '/',
     },
     devServer: {
-        historyApiFallback: true
+        historyApiFallback: true,
+        // onAfterSetupMiddleware: (devServer) => {
+        //     if (!devServer) {
+        //         throw new Error('webpack-dev-server is not defined');
+        //     }
+        //
+        //     addProxy(devServer.app)
+        // }
     },
     module: {
         rules: [
