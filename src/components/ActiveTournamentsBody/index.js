@@ -24,7 +24,7 @@ const Active_tournament = [
 
 	},
 ];
-const Boxscore = () => {
+const Active = () => {
 	return (
 		<div className="boxscoreBody">
 			<div className="boxscoreHeader">
@@ -33,10 +33,10 @@ const Boxscore = () => {
 			</div>
 		
 				<div className="tournament">
-				{Active_tournament.map((match) => (
+				{Active_tournament.map((t) => (
 					<ActiveTournament
-						name={match.name}
-						date={match.date}
+						name={t.name}
+						date={t.date}
 						
 						
 					/>
@@ -48,4 +48,4 @@ const Boxscore = () => {
 	);
 };
 
-export default Boxscore;
+export default Active;
