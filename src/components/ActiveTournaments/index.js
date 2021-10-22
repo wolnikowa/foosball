@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.scss";
 import EditIcon from '@material-ui/icons/Edit';
-const BoxscoreMatch = ({ date, name }) => {
+const ActiveTournaments = ({ date, name }) => {
 	return (
 		<div className="box">
 			<div className="boxHeader">
@@ -18,7 +18,7 @@ const BoxscoreMatch = ({ date, name }) => {
 	);
 };
 
-export default BoxscoreMatch;
+export default ActiveTournaments;
 
 
 

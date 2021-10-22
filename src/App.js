@@ -4,11 +4,7 @@ import Nav from "./components/Nav";
 import DefaultPage from "./components/Main";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { IntlProvider } from "react-intl";
-
-import Boxscore from "./components/BoxScore";
 import ActiveTournamentBody from "./components/ActiveTournamentsBody";
-
-
 import "./globalStyles.scss";
 import GroupsTable from "./components/ActiveTournamentGroups";
 import TournamentEdition from "./components/TournamentEdition";
@@ -24,10 +20,6 @@ const App = () => (
 					<Switch>
 						<Route exact path="/">
 							<DefaultPage />
-
-
-							<Boxscore/>
-
 							
 							<GroupsTable />
 						

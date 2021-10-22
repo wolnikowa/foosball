@@ -49,6 +49,7 @@ const mock_data_boxscore = [
 
 const Boxscore = () => {
 	return (
+		<div className="boxScoreContent">
 		<div className="boxscoreBody">
 			<div className="boxscoreHeader">
 				<span>Boxscore</span>
@@ -65,7 +66,7 @@ const Boxscore = () => {
 					/>
 				))}
 			</div>
-		</div>
+		</div></div>
 	);
 };
 

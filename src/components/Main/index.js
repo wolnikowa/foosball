@@ -1,6 +1,6 @@
 import React from "react";
 import SignUpBox from "../SignUpForTournamentBox";
-
+import Boxscore from "./../BoxScore";
 import "./styles.scss";
 
 const MOCK_DATA = [
@@ -27,7 +27,7 @@ const MOCK_DATA = [
 const DefaultPage = () => {
 	return (
 
-		<div className="height">
+		<div className="signUpBoxes">
 
 			{MOCK_DATA.map((tournament) => (
 				<SignUpBox
@@ -38,7 +38,7 @@ const DefaultPage = () => {
 				/>
 			))}
 
-		
+		<Boxscore />
 
 		</div>
 
