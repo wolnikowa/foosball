@@ -28,7 +28,6 @@ const App = () => (
 							
 							<GroupsTable />
 						
-							<Boxscore />
 						</Route>
 						<Route exact path="/Active-tournament">
 							<ActiveTournamentBody />
