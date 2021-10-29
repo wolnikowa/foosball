@@ -41,6 +41,7 @@ const tournamentEditionFields = [
 
 	},
 ];
+
 const TournamentEdition = () => {
 	return (
 		<div className="boxscoreBody">
