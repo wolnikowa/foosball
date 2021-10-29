@@ -32,8 +32,8 @@ table {
             text-align: left;
         }
         .icon {
-            width: 24px;
-            height: auto;
+            width: 28px;
+            height: 28px;
             padding: 0 4px;
         }
     }
@@ -58,4 +58,17 @@ table {
         background-color: rgba($jitYellow, 0.5);
 
     }
+}
+.groupSelect {
+    position: relative;
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+
+#group-select {
+    font-family: 'Moderat';
+}
+
+#item-select {
+    font-family: 'Moderat';
 }
