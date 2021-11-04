@@ -52,6 +52,7 @@ console.log(axios.get(allTeams))
 
 const Boxscore = () => {
 	return (
+		<div className="boxScoreContent">
 		<div className="boxscoreBody">
 			<div className="boxscoreHeader">
 				<span>Boxscore</span>
@@ -68,7 +69,7 @@ const Boxscore = () => {
 					/>
 				))}
 			</div>
-		</div>
+		</div></div>
 	);
 };
 

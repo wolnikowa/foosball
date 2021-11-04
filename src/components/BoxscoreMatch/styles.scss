@@ -3,7 +3,7 @@
 .box{
     flex:30%;
     margin: 0 10px 20px 10px;
-    .boxHeader{
+    .boxHeaderMatch{
         background-color: black;
         color:white;
         display:flex;
@@ -12,7 +12,7 @@
         font-size: 15px;
         padding:5px 10px;
     }
-    .boxBody{
+    .boxBodyMatch{
         display:flex;
         flex-direction: row;
         flex-wrap: nowrap;

@@ -1,7 +1,7 @@
 import React from "react";
 import Edition from "../TournamentEditionBody";
 import EditIcon from '@material-ui/icons/Edit';
-
+import './styles.scss';
 
 const tournamentEditionFields = [
 	{
