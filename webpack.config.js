@@ -1,9 +1,11 @@
+const axios=require('axios')
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 const {
     addProxy,
 } = require('./server/setupServer');
+
 
 module.exports = {
     context: __dirname,
@@ -15,15 +17,13 @@ module.exports = {
     },
     devServer: {
         historyApiFallback: true,
-        // onAfterSetupMiddleware: (devServer) => {
-        //     if (!devServer) {
-        //         throw new Error('webpack-dev-server is not defined');
-        //     }
+        onAfterSetupMiddleware: (devServer) => {
+            if (!devServer) {
+                throw new Error('webpack-dev-server is not defined');
+            }
         
-        //     addProxy(devServer.app)
-        // },
-// addProxy: addProxy(devServer.app),
-
+            addProxy(devServer.app)
+        },
     },
     module: {
         rules: [
@@ -61,9 +61,6 @@ module.exports = {
                 use: [
                     {
                         loader: "file-loader",
-                        options: {
-                            outputPath: 'images'
-                        }
                     }
                 ]
             },
